@@ -1,0 +1,38 @@
+<div>
+
+  <!-- Header Component -->
+  <div class="bg-black h-[60vh] md:h-[85vh] px-20 py-6 text-white bgImage">
+    <div>
+      <img src="https://healthstay.io/_vercel/image?url=%2Fimages%2Flanding%2Fhealthstay.png&w=1536&q=100"
+      class="w-48 "
+      >
+    </div>
+
+    <div class="mt-20 md:mt-52">
+      <h2 class="md:text-4xl text-xl  font-semibold pb-8">The World's First AI SaaS Sales & <br>
+        Booking Solution for Medical Tourism.</h2>
+
+      <div class="h-14 sm:2-full w-full md:w-3/6 py-4 bg-white rounded-full border text-black flex items-center justify-center
+       gap-4">
+        <img src="https://healthstay.io/_vercel/image?url=%2Fimages%2Flanding%2Fcursor.png&w=1536&q=100"
+        class="w-4"
+        >
+
+        <a [routerLink]='["/register"]' class="cursor-pointer">
+          <span class="text-indigo-950 text-base md:text-lg font-semibold capitalize leading-normal">
+            Click here to sign-up
+          </span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- components Called -->
+  <app-hero></app-hero>
+  <app-about></app-about>
+  <app-medical-product></app-medical-product>
+  <app-tourism-packages></app-tourism-packages>
+  <app-footer></app-footer>
+</div>
+
+

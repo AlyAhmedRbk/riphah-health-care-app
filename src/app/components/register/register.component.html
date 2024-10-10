@@ -1,0 +1,29 @@
+  <div>
+    <div class="bg-slate-900 px-14 py-5 flex items-center justify-between text-white w-full">
+      <a [routerLink]="['/']">
+        <img src="https://healthstay.io/_vercel/image?url=%2Fimages%2Flanding%2Fhealthstay.png&w=1536&q=100"
+        class="w-52">
+      </a>
+      <ul>
+        <li><a [routerLink]="['/']" class="font-semibold">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="flex items-center justify-center flex-col md:w-full w-[400px]">
+      <h2 class="text-2xl md:text-4xl font-semibold text-center py-10 gap-5 ">Registeration Form</h2>
+      <form action="" class="flex gap-5 flex-col">
+        <div class="flex gap-4">
+          <input type="text" placeholder="Your Name" class="px-2  w-44 md:w-64 border border-slate-400 h-10 rounded">
+          <input type="email" placeholder="Your Email" class="px-2  w-44 md:w-64 border border-slate-400 h-10 rounded">
+        </div>
+        <input type="number" placeholder="Your Phone" class="px-2 w-full border border-slate-400 h-10 rounded">
+        <div class="flex gap-4">
+          <input type="text" placeholder="Hospital Name" class="px-2  w-44 md:w-64 border border-slate-400 h-10 rounded">
+          <input type="text" placeholder="Clinic Name" class="px-2  w-44 md:w-64 border border-slate-400 h-10 rounded">
+        </div>
+        <input type="text" placeholder="Location" class="px-2  w-full border border-slate-400 h-10 rounded">
+
+        <button class=" w-full md:w-full bg-slate-900 h-10 text-white font-semibold">Submit</button>
+      </form>
+    </div>
+  </div>
