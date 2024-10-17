@@ -3,7 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { FooterComponent } from "../footer/footer.component";
 import {FormsModule} from "@angular/forms";
 import { HttpClient } from '@angular/common/http';
-import { error } from 'console';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,29 +14,19 @@ import { error } from 'console';
 })
 export class RegisterComponent {
 
+  router = inject(Router);
+
   http  = inject(HttpClient);
 
-  data :any [] =[];
 
-  userData: any=
-  {
-    name : '',
-    email : '',
-    phone : '',
-    hospitalName : '',
-    clinicName : '',
-    location : '',
-  }
-
-  saveData(){
-    this.data = this.userData;
-    console.log(this.data);
-
-    this.http.post("", this.data).subscribe((res)=>{
+  saveData(data : any){
+    // console.log(data);
+    this.http.post("http://localhost:3000/userData", data).subscribe((res)=>{
       console.log("User Registered Successfully");
+      alert("User Registered Successfully");
+      if(res){
+        this.router.navigate([""])
+      }
     });
-
-    this.userData = "";
   }
-
-  }
+}
