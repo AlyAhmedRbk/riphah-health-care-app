@@ -1,22 +1,12 @@
 {
   "userData": [
     {
-      "id": "cadd",
+      "id": "fd76",
       "name": "Ali Ahmed",
       "email": "ali@test.com",
-      "phone": 3123123,
-      "hospital-name": "Riphah",
-      "clinic-name": "Riphah",
-      "location": "Islamabad"
-    },
-    {
-      "id": "afbb",
-      "name": "Kashif Mirza",
-      "email": "kashif@test.com",
-      "phone": 3453437438764,
-      "hospital-name": "Riphah",
-      "clinic-name": "Riphah",
-      "location": "Islamabad"
+      "phone": 3454646040,
+      "hospital-info": "Riphah",
+      "location": "ISB"
     }
   ]
 }
